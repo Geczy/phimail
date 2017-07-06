@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js -p 3000"
+    "dev": "cross-env NODE_ENV=development node server.js -p 3000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@coderbox/navbar": "^1.0.1",
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
     "next": "^3.0.1-beta.8",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-plugin-module-resolver": "^2.7.1",
+    "cross-env": "^5.0.1",
     "standard": "^10.0.2"
   }
 }
